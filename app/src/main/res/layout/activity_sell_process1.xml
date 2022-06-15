@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellProcess1_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="925dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اسم المنتج:"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+            <EditText
+                android:id="@+id/kitPreName"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="ادخل اسم المنتج"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="30dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="380dp" />
+
+            <ImageView
+                android:id="@+id/kitPreImg"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/kitNameWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/kitPreName" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="صورة للمنتج:"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/kitNameWarn" />
+
+            <Button
+                android:id="@+id/btnUpKitImg"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ارفع صورة"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/kitPreImg"
+                app:layout_constraintStart_toStartOf="@+id/kitPreImg"
+                app:layout_constraintTop_toBottomOf="@+id/kitPreImg" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="تصنيف المنتج:"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/btnUpKitImg" />
+
+            <Spinner
+                android:id="@+id/catSpin"
+                android:layout_width="275dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                app:layout_constraintEnd_toStartOf="@+id/textView24"
+                app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="وصف المنتج:"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/catSpinWarn" />
+
+            <EditText
+                android:id="@+id/kitPreDesc"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="ادخل معلومات المنتج وعيوبه إن وجدت"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <TextView
+                android:id="@+id/kitDescWarn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/kitPreDesc"
+                app:layout_constraintStart_toStartOf="@+id/kitPreDesc"
+                app:layout_constraintTop_toBottomOf="@+id/kitPreDesc" />
+
+            <TextView
+                android:id="@+id/kitImgWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/btnUpKitImg"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toEndOf="@+id/btnUpKitImg"
+                app:layout_constraintTop_toBottomOf="@+id/kitPreImg" />
+
+            <TextView
+                android:id="@+id/catSpinWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/textView24"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/catSpin"
+                app:layout_constraintTop_toBottomOf="@+id/catSpin" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="24dp"
+                android:text="السعر المقترح:"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/kitDescWarn" />
+
+            <EditText
+                android:id="@+id/kitPrePrice"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="ادخل السعر المقترح"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textView31"
+                app:layout_constraintEnd_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toTopOf="@+id/textView31"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <TextView
+                android:id="@+id/kitPriceWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/textView31"
+                app:layout_constraintStart_toStartOf="@+id/kitPrePrice"
+                app:layout_constraintTop_toBottomOf="@+id/kitPrePrice" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="ريال"
+                app:layout_constraintBottom_toTopOf="@+id/kitPriceWarn"
+                app:layout_constraintEnd_toStartOf="@+id/kitPrePrice"
+                app:layout_constraintTop_toTopOf="@+id/kitPrePrice" />
+
+            <Button
+                android:id="@+id/btnNextToSell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:text="التالي"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kitPriceWarn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NBHwarehouse</string>
+    <string name="title_activity_nbmain">NBMainActivity</string>
+    <array name="cities">
+        <item>مكة</item>
+        <item>جدة</item>
+        <item>الرياض</item>
+        <item>الطائف</item>
+        <item>الدمام</item>
+    </array>
+
+    <string-array name="categorySpin">
+        <item>حفلات</item>
+        <item>رياضة</item>
+        <item>مطبخ</item>
+        <item>إصلاح وتركيب</item>
+        <item>حدائق</item>
+        <item>شواء</item>
+        <item>ترفيه</item>
+    </string-array>
+
+</resources>

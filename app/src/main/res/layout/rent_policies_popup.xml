@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/viewRentPolicies"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:text="سياسات الاستئجار: \n \n -يبدأ العد التنازلي لساعات الاستئجار بعد 30 دقيقة من استلام المنتج. \n \n -أي تأخير في إرجاع المنتج بعد انتهاء الساعات المحددة يتطلب دفع مبالغ إضافية بحسب عدد ساعات التأخير. \n \n -أي تلف أو عطل في المنتج عند الارجاع يتطلب دفع غرامة.  "
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAcceptRentPolicies"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="موافق"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewRentPolicies"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
